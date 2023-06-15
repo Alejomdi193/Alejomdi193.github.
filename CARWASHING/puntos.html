@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Gamesoft</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="videojuegos.html">Videojuegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="compras.html">Compras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="puntos.html">Puntos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <section class="row">
+
+        
+            <div class="col col-md-12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar cliente por documento..." id="buscar-clientes">
+                </div>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped text-center tabla-clientes">
+                            <thead>
+                            <tr>
+                                <th>Identificación</th>
+                                <th>Nombres</th>
+                                <th>Apellidos</th>
+                                <th>Puntos</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tabla-clientes">
+                                <tr>
+                                    <td>1118528058</td>
+                                    <td>Carlos</td>
+                                    <td>Santana</td>
+                                    <td>3107136352</td>
+                                    <td>carlos@carlos.com</td>
+                                    <td>07/07/2000</td>
+                                    <td>Colombia</td>
+
+                                    <td class="">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-primary me-1">
+                                                E
+                                            </button>
+                                            <button class="btn btn-danger">
+                                                B
+                                            </button>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </section>
+
+      
+
+    </main>
+    <footer class="text-center text-white" data-bs-theme="dark">
+     
+      <div class="text-center text-dark p-3" style="background-color:black;">
+         <br>
+          © By Alejo
+      </div>
+      
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/puntos.js"></script>
+</body>
+</html>

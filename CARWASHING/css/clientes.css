@@ -1,0 +1,16 @@
+body{    
+    
+    background-image:url('./audi-r8-car-3d-render-image-free-photo.jpg') ;
+    background-repeat: no-repeat;
+    background-position: relative;
+
+
+}
+
+.fondo{
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 4%;
+    
+}

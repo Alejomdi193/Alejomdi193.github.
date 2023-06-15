@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/car.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Car Washing Center</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="car.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compras.html">Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="puntos.html">Puntos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+    
+    <main class="fondo" class="fondo" class="container mt-5">
+        <section class="row">
+            <div class="col col-md-4 formulario">
+                <form  id="form-anadir">
+                    <div class="mt-2 col-md-12">
+                      <label for="nombre" class="form-label">Nombre del servicio</label>
+                      <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="mt-2 col-12">
+                      <label for="valor" class="form-label">Valor del servicio</label>
+                      <input type="number" class="form-control" id="valor">
+                    </div>
+
+                    <div class="mt-2 col-12">
+                      <label for="valor" class="form-label">Descripcion del Auto</label>
+                      <input type="text" class="form-control" id="descrip">
+                    </div>
+                    <div class="mt-2 col-12">
+                        <label for="puntos" class="form-label">Puntos</label>
+                        <input type="number" class="form-control" id="puntos">
+                      </div>
+                    <div class="mt-2 col-12 d-flex justify-content-center">
+                      <button type="submit" class="btn btn-primary" id="btn-Add">Agregar</button>
+                    </div>
+                  </form>
+            </div>
+
+        
+            <div class="col col-md-8">
+                    <div class="table-responsive">
+                        <table class="table table-dark table-striped text-center tabla-clientes">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Valor del servicio</th>
+                                <th>Descripcion del Auto</th>
+                                <th>Puntos</th>
+                                <th>Opciones</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tabla-vid">
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </section>
+
+      
+
+    </main>
+
+    <footer class="text-center text-white" data-bs-theme="dark">
+      
+      <div class="text-center text-dark p-3" style="background-color:black;">
+         <br>
+          © By Alejo
+      </div>
+     
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/car.js"></script>
+</body>
+</html>

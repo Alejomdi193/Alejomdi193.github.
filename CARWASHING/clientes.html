@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Car Washing Center</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="car.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compras.html">Compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="puntos.html">Puntos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+    
+    <main class="fondo" class="container mt-5">
+        <section class="row">
+            <div class="col col-md-4 formulario">
+                <form  id="form-anadir">
+                    <div class="col-md-12">
+                      <label for="identificacion" class="form-label">Numero de identificacion</label>
+                      <input type="number" class="form-control" id="identificacion">
+                    </div><br>
+                    <div class="mt-2 col-md-12">
+                      <label for="nombres" class="form-label">Nombres</label>
+                      <input type="text" class="form-control" id="nombres">
+                    </div><br>
+                    <div class="mt-2 col-12">
+                      <label for="apellidos" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="apellidos">
+                    </div><br>
+                    <div class="mt-2 col-12">
+                      <label for="placa" class="form-label">Placa Auto</label>
+                      <input type="text" class="form-control" id="placa">
+                    </div><br>
+                    <div class="mt-2 col-12">
+                      <select class="form-select" aria-label="Default select example" id="tipo">
+                          <option selected>Tipo</option>
+                          <option value="1">Automovil</option>
+                          <option value="2">Camioneta</option>
+                          <option value="3">Autobús</option>
+                          <option value="4">Camión de Carga</option>
+                        </select>
+                  </div><br>
+
+                    <div class="mt-2 col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div><br>
+                    <div class="mt-2 col-12">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" id="telefono">
+                    </div><br>
+                    <div class="mt-2 col-12 d-flex justify-content-center">
+                      <button type="submit" class="btn btn-primary" id="btn-Add">Agregar</button>
+                    </div>
+                  </form>
+            </div>
+
+        
+ 
+            <div class="col col-md-8">
+              <div class="table-responsive">
+              <table class="table table-dark table-striped text-center">
+                  <thead>
+                      <tr>
+                        <th>Identificación</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Placa Auto</th>
+                        <th>Tipo</th>
+                        <th>Email</th>
+                        <th>Telefono</th>
+                        <th>Opciones</th>
+                      </tr>
+                  </thead>
+                  <tbody id="tabla-clientes">
+                      <tr>
+                          <td>1093432668</td>
+                          <td>ALEJANDRO</td>
+                          <td>MUÑOZ</td>
+                          <td>UDT 342</td>
+                          <td>Automovil</td>
+                          <td>mdiegoalejandro17@gmail.com</td>
+                          <td>3145834810</td>
+                          <td class="">
+                              <div class="d-flex justify-contect-center alig-items-center">
+                              <button class="btn btn-primary me-1">editar</button>
+                              <button class="btn btn-danger me-1">eliminar</button>
+                          
+                               </div>
+                           </td>
+                       </tr>
+                      
+                  </tbody>
+              </table>
+              </div>
+          </div>
+
+      </section>
+
+
+  </main>
+
+
+      
+
+    </main>
+
+    <footer class="text-center text-white" data-bs-theme="dark">
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: black;">
+         <br>
+          © By Alejo
+      </div>
+      
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/clientes.js"></script>
+</body>
+</html>

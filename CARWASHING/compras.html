@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/compras.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Car Washing Center</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="car.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="compras.html">Compras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="puntos.html">Puntos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+        
+    
+    <main class="fondo" class="container mt-5">
+        <section class="row">
+            <div class="col col-md-8" id="form-tickets">
+                <!-- SEARCH -->
+                <form action="" class="form-control">
+
+                    <h3 class="text-center mt-2 mb-4">Datos de Compra</h3>
+
+                    <!-- SELECCION DE CLIENTES -->
+                    <div class="container-fluid" id="clientes">
+      
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Buscar cliente por dato..." id="buscar-clientes">
+                        
+                        </div>
+
+                   
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Identificación</th>
+                                        <th>Nombres</th>
+                                        <th>Apellidos</th>
+                                        <th>Placa Auto</th>
+                                        <th>Tipo</th>
+                                        <th>Email</th>
+                                        <th>Telefono</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabla-clientes">
+                                    <tr>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                    
+
+      
+
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success disabled" type="button" id="select-cliente">Imprimir</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="container-fluid d-none" id="cars">
+                   
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Buscar por nombre" id="datos">
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Identificación</th>
+                                        <th>Nombres</th>
+                                        <th>Apellidos</th>
+                                        <th>Placa Auto</th>
+                                        <th>Tipo</th>
+                                        <th>Email</th>
+                                        <th>Telefono</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabla-cars">
+                                    <tr>
+                                        <td>1093432668</td>
+                                        <td>ALEJANDRO</td>
+                                        <td>MUÑOZ</td>
+                                        <td>UDT 342</td>
+                                        <td>Automovil</td>
+                                        <td>mdiegoalejandro17@gmail.com</td>
+                                        <td>3145834810</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                   
+
+      
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success disabled" type="button" id="comprar">SIGUIENTE</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+
+         
+
+            <div class="col col-md-4">
+                <div class="card d-flex flex-direction-column">
+                    <h3 class="mt-2 text-center">Car Washing Center</h3>
+                    <h5 class="text-center">Detalle de su compra</h5>
+                    <hr class="me-3 ms-3">
+                    <h5 class="text-center">Datos Cliente</h5>
+                    <div class="card-body" id="clienteDatos">
+                        <p><b>Documento:</b> </p>
+                        <p><b>Nombres:</b> </p>
+                        <p><b>Apellidos:</b> </p>
+                        <p><b>Placa del auto:</b> </p>
+                        <p><b>Tipo:</b> </p>
+                        <p><b>Email:</b> </p>
+                        <p><b>Telefono:</b> </p>
+                    </div><br>
+                    <hr class="me-3 ms-3">
+                    <h5 class="text-center">Costos</h5>
+                    <div class="card-body" id="carDatos">
+                        <p><b>Valor del servicio:</b> </p>
+                        <p><b>+IVA:</b> </p>
+                        <p><b>-Descuento Especial:</b> </p>
+                        <p><b>Total:</b> </p>
+                        <hr>
+                        <p><b>Puntos de Fidelización:</b> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+      
+
+    </main>
+
+
+    <footer class="text-center text-white" data-bs-theme="dark">
+      
+        <div class="text-center text-dark p-3" style="background-color:black;">
+           <br>
+            © By Alejo
+        </div>
+        
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/compras.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
