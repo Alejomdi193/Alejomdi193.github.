@@ -2,7 +2,8 @@
 
 ## Descripción
 Campus Car Washing Center es una aplicación web diseñada para gestionar de manera eficiente un centro de lavado de autos. Este sistema proporciona funcionalidades CRUD completas para administrar clientes, servicios, compras y puntos acumulados. La aplicación está desarrollada utilizando HTML, CSS, JavaScript y la librería Bootstrap para asegurar una interfaz moderna y responsiva.
-![](../CARWASHING/CARWASHING/img/audi-r8-car-3d-render-image-free-photo.jpg "Demo index")
+![](CARWASHING/img/audi-r8-car-3d-render-image-free-photo.jpg "Demo index")
+
 
 
 ## Características
