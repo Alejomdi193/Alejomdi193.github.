@@ -2,6 +2,8 @@
 
 ## Descripción
 Campus Car Washing Center es una aplicación web diseñada para gestionar de manera eficiente un centro de lavado de autos. Este sistema proporciona funcionalidades CRUD completas para administrar clientes, servicios, compras y puntos acumulados. La aplicación está desarrollada utilizando HTML, CSS, JavaScript y la librería Bootstrap para asegurar una interfaz moderna y responsiva.
+![](../CARWASHING/CARWASHING/img/audi-r8-car-3d-render-image-free-photo.jpg "Demo index")
+
 
 ## Características
 
@@ -30,7 +32,7 @@ Campus Car Washing Center es una aplicación web diseñada para gestionar de man
 ## Instalación
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/campus-car-washing-center.git
+   git clone https://github.com/Alejomdi193/CARWASHING.git
    ```
 2. Abre el archivo `index.html` en tu navegador favorito para iniciar la aplicación.
 
@@ -39,7 +41,7 @@ Campus Car Washing Center es una aplicación web diseñada para gestionar de man
 - Utiliza las opciones CRUD disponibles en cada sección para administrar datos de clientes, servicios, compras y puntos.
 
 ## Autor
-Este proyecto fue desarrollado por **Alejo**.
+Este proyecto fue desarrollado por **Alejandro Muñoz**.
 
 ## Licencia
 Este proyecto está licenciado bajo la [MIT License](LICENSE).
